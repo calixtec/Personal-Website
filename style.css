@@ -140,3 +140,12 @@ header {
 .colorchange{
 color: lightgray;
 }
+.appphoto{
+  
+  width: 200px;
+  height: 300px;
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #333
+}
