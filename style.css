@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+  }
 .header{
     
     background-color: lightseagreen; 
@@ -78,6 +81,7 @@ a:active{
   .icon{
 height: 75px;
 width: 75px;
+transition: all 300ms;
   }
   .logo{
     height: 45px;
@@ -104,6 +108,16 @@ td {
   height: 30vh; 
   margin: 0;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .center-container2 {
   display: flex;
   flex-direction: column;
@@ -111,7 +125,7 @@ td {
   align-items: center;
   height: 0px;
   margin: 0;
-  
+  animation: fadeIn 1s ease-in-out;
 }
 
 
@@ -138,6 +152,7 @@ header {
 }
 
 .colorchange{
+  font-size: 30px;
 color: lightgray;
 }
 .appphoto{
@@ -148,4 +163,30 @@ color: lightgray;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #333
+}
+.centered-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300x; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+   /* Background color, adjust as needed */
+   animation: fade-up 650ms 600ms backwards;
+}
+
+/* Style the inner content of the centered box */
+.centered-box p {
+  height: 250px;
+  width: 450px;
+  padding: 20px;
+  border: 2px solid #333; /* Border color and thickness */
+  border-radius: 20px; /* Adjust the value for desired corner roundness */
+  text-align: center; /* Center the text inside the box */
+  
+}
+* {
+font-family: 'Lato', sans-serif;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
