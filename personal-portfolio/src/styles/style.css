@@ -1,0 +1,342 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0e0e10;
+  color: #f1f1f1;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  color: #3ea6ff;
+  background-color: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+h1, h2, .name {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100; 
+}
+
+
+
+.title-one{
+  display: flex;
+  height: 150px;
+  margin-left: 20%;
+  /* margin: 50px 0; */
+  color: #3ea6ff;
+  font-size: 2.5rem;
+
+}
+.title-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin: 50px 0;
+  color: #3ea6ff;
+  font-size: 1.8rem;
+}
+
+a {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #64b5f6;
+}
+
+.footer {
+  background-color: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(4px);
+  padding: 20px;
+  text-align: center;
+  color: #3ea6ff;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #3ea6ff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  color: #64b5f6;
+}
+
+.myphoto {
+  width: 80px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #3ea6ff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+
+p {
+  display: block;
+}
+
+.icon {
+  height: 75px;
+  width: 75px;
+  transition: all 300ms;
+  color: #3ea6ff;
+}
+
+.logo {
+  height: 45px;
+  width: 45px;
+}
+
+table {
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+td {
+  border: 0;
+  padding: 25px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.center-container2 {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  color: #64b5f6;
+  animation: fadeIn 700ms ease-in-out;
+}
+
+.left-item {
+  margin-left: 20px;
+}
+
+.right-item {
+  margin-right: 20px;
+}
+
+.colorchange {
+  font-size: 36px;
+  color: #3399ff;
+  text-align: center;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+}
+
+.appphoto {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid #3ea6ff;
+}
+
+.centered-box {
+  display: flex;
+  justify-content: flex-start; /* Changed from center */
+  width: 100%;
+  max-width: 800px; /* Match your content width */
+  margin: 0 auto;
+
+}
+
+.centered-box p {
+  width: 100%;
+  text-align: left; /* Changed from center */
+  line-height: 1.8;
+  margin-right: 45%; /* Remove any side margins */
+}
+
+/* Adjust the container for better vertical spacing */
+.center-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #64b5f6;
+  width: 100%; /* Full width */
+  padding: 0 20px; /* Side padding */
+}
+
+.tech-icon {
+  color: #3ea6ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.divider{
+  width: 60%; /* or 100% if you want full-width */
+  margin: 40px auto;
+  border: none;
+  border-top: 1px solid #444; /* muted line color for dark themes */
+  opacity: 0.5; 
+}
+
+
+/* new top section  */
+.top-section {
+  margin-top: 5%;
+  background-color: #0f0f0f;
+  color: #66ccff;
+  /* padding: 50px 30px; */
+  
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.profile-pic-wrapper {
+  width: 160px;
+  height: 160px; /* Make it square for a perfect circle */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 45%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 25%; /* Push view up slightly */
+  transform: scale(1.50) translateX(9%); /* Zoom out a bit to include collar */
+}
+
+.name {
+  font-size: 2.3rem; 
+}
+
+.name, .tagline {
+  margin: 0;
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-left:45%;
+  
+}
+
+.nav-links a {
+  color: #66ccff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+  
+}
+
+.nav-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #66ccff;
+}
+
+.nav-links2 {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-right:45%;
+  width: 100%;
+}
+.nav-links2 a {
+  color: #66ccff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+
+.nav-links2 a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #66ccff;
+}
+
+
+
+/* Remove all the individual margin-left rules */
+
+
+.tech-icon {
+  font-size: 24px;
+  color: #66ccff;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.tech-icon:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #66ccff;
+  transition: 0.3s ease-in-out;
+}
+
+/* Tooltip Style */
+.resume-link {
+  position: relative;
+  display: inline-block;
+}
+
+.resume-link::after {
+  content: "Calixte_Christopher_Resume.pdf";
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Show tooltip on hover */
+.resume-link:hover::after {
+  display: block;
+}

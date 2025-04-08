@@ -11,7 +11,7 @@ justify-content: center;
 align-items: center;
 height: 150px;
 margin: 50px;
-color: blueviolet;
+color: lightblue;
 }
 
 body {
@@ -67,7 +67,8 @@ a:active{
     float: left;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid rgb(83, 0, 249);
+    
+    border: 2px solid rgb(1, 189, 252);
     animation: fadeIn 1s ease-in-out;
   }
 
@@ -132,7 +133,8 @@ td {
   height: 0px;
   margin: 0;
   animation: fadeIn 700ms ease-in-out;
-  color: blueviolet; 
+  
+  color:   rgba(1, 114, 252, 0.974); 
 }
 
 
@@ -142,7 +144,7 @@ header {
   align-items: center;
   padding: 0px; /* Increase the padding for more space */
   background-color: #333;
-  color: blueviolet;
+  color: rgb(1, 252, 244);
 }
 
 .left-item, .right-item {
@@ -160,16 +162,16 @@ header {
 
 .colorchange{
   font-size: 30px;
-color: blueviolet;
+color: rgb(1, 252, 244);
 }
+
 .appphoto{
-  
   width: 200px;
   height: 300px;
   float: left;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid rgb(83, 0, 249);
+  border: 5px solid rgb(1, 252, 244);
 }
 .centered-box {
   display: flex;
@@ -186,7 +188,7 @@ color: blueviolet;
   height: 250px;
   width: 450px;
   padding: 20px;
-  border: 2px solid  rgb(83, 0, 249); /* Border color and thickness */
+  border: 2px solid rgb(1, 189, 252); /* Border color and thickness */
   border-radius: 20px; /* Adjust the value for desired corner roundness */
   text-align: center; /* Center the text inside the box */
   
